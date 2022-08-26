@@ -1,10 +1,8 @@
-#a pin code bruteforcer using python and selenium
-#this script cant be used for malicious purposes since i didn't implement cookies
+#pin code bruteforcer using python and selenium
 #you must install python from google manually
 #-pip install selenium in CMD
 #https://chromedriver.chromium.org/downloads download it and make a temp folder in librarys
 #then run it
-#i'm too lazy to add a under 13 account feature
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
