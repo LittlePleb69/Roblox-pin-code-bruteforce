@@ -1,7 +1,7 @@
 #pin code bruteforcer using python and selenium
 #you must install python from google manually
 #-pip install selenium in CMD
-#https://chromedriver.chromium.org/downloads download it and make a temp folder in librarys
+#https://chromedriver.chromium.org/downloads download it and make a temp folder in librarys in ur C folder
 #then run it
 #i also made thisz script personally for myself so idk what use you have with this if u got 2fa
 from selenium import webdriver
