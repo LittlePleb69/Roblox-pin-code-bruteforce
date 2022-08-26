@@ -3,11 +3,12 @@
 #-pip install selenium in CMD
 #https://chromedriver.chromium.org/downloads download it and make a temp folder in librarys
 #then run it
+#i also made thisz script personally for myself so idk what use you have with this if u got 2fa
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 #############################################
-PATH = '#your temp google path file'
+PATH = '"C:\temp\chromedriver.exe"'
 username = input('username: ')
 password = input('password: ')
 ##############################################
@@ -36,20 +37,20 @@ for i in range(0,10000):
             b += 1
             if b == 5:
                     b = 0
-                        print('System Error...')
-                        print("5 minutes...")
-                        time.sleep(60)
-                        print("4 minutes...")
-                        time.sleep(60)
-                        print("3 minutes...")
-                        time.sleep(60)
-                        print("2 minutes...")
-                        time.sleep(60)
-                        print("1 minute left...")
-                        time.sleep(60)
-                        print("5 Minutes are Done!")
-                        time.sleep(1)
-                        continue            
+                    print('System Error...')
+                    print("5 minutes...")
+                    time.sleep(60)
+                    print("4 minutes...")
+                    time.sleep(60)
+                    print("3 minutes...")
+                    time.sleep(60)
+                    print("2 minutes...")
+                    time.sleep(60)
+                    print("1 minute left...")
+                    time.sleep(60)
+                    print("5 Minutes are Done!")
+                    time.sleep(1)
+                    continue            
         except:
             print(f'Pincode is {pin}')
             quit()   
