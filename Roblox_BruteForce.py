@@ -38,10 +38,6 @@ for i in range(0,10000):
             b += 1
             if b == 5:
                     b = 0
-                    aa = input("you wanna pause? (just ignore if u dont) y/n")
-                    if aa == 'y':
-                        cc = int(input("how many seconds?:"))
-                        time.sleep(cc)
                         print('System Error...')
                         print("5 minutes...")
                         time.sleep(60)
