@@ -2,8 +2,9 @@
 #you must install python from google manually
 #-pip install selenium in CMD
 #https://chromedriver.chromium.org/downloads download it and make a temp folder in librarys in ur C folder
+#then get a text editor 
 #then run it
-#i also made thisz script personally for myself so idk what use you have with this if u got 2fa
+#i also made this script personally for myself so idk what use you have with this if u got 2fa
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
@@ -54,4 +55,4 @@ for i in range(0,10000):
             print(f'Pincode is {pin}')
             quit()   
         
-        
+
